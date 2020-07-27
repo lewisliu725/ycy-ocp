@@ -4,7 +4,6 @@ import com.leliu.ycyocp.consumer.DefaultYcyConsumerImpl;
 import com.leliu.ycyocp.consumer.YcyConsumer;
 import com.leliu.ycyocp.model.ConsumeResult;
 import com.leliu.ycyocp.model.EmptyParam;
-import com.leliu.ycyocp.model.GenericProduct;
 import com.leliu.ycyocp.model.StringProduct;
 import com.leliu.ycyocp.producer.DefaultYcyProducerImpl;
 import com.leliu.ycyocp.producer.YcyProducer;

@@ -3,7 +3,6 @@ package com.leliu.ycyocp.runner;
 import com.leliu.ycyocp.consumer.YcyConsumer;
 import com.leliu.ycyocp.manager.YcyManager;
 import com.leliu.ycyocp.model.ConsumeResult;
-import com.leliu.ycyocp.model.EmptyParam;
 import com.leliu.ycyocp.model.ProduceParam;
 import com.leliu.ycyocp.model.Product;
 import com.leliu.ycyocp.producer.YcyProducer;
@@ -31,7 +30,7 @@ public class DefaultYcyRunnerImpl<
         return this.ycyManager;
     }
 
-    public static <TParam extends ProduceParam, TProduct extends Product, TResult extends ConsumeResult> DefaultYcyRunnerImpl of(YcyManager<TParam, TProduct, TResult> ycyManager) {
-        return new DefaultYcyRunnerImpl(ycyManager);
+    public static <TParam extends ProduceParam, TProduct extends Product, TResult extends ConsumeResult> DefaultYcyRunnerImpl<TParam, TProduct, TResult> of(YcyManager<TParam, TProduct, TResult> ycyManager) {
+        return new DefaultYcyRunnerImpl<>(ycyManager);
     }
 }

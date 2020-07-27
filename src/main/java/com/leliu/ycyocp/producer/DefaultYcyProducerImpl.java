@@ -1,7 +1,6 @@
 package com.leliu.ycyocp.producer;
 
 import com.leliu.ycyocp.model.EmptyParam;
-import com.leliu.ycyocp.model.ProduceParam;
 import com.leliu.ycyocp.model.Product;
 import com.leliu.ycyocp.model.StringProduct;
 

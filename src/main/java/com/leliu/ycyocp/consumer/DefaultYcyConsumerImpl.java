@@ -1,7 +1,6 @@
 package com.leliu.ycyocp.consumer;
 
 import com.leliu.ycyocp.model.ConsumeResult;
-import com.leliu.ycyocp.model.GenericProduct;
 import com.leliu.ycyocp.model.Product;
 
 public class DefaultYcyConsumerImpl<TProduct extends Product> implements YcyConsumer<TProduct, ConsumeResult> {
