@@ -10,6 +10,7 @@ import com.lelib.ycyocp.model.StringProduct;
 import com.lelib.ycyocp.producer.DefaultYcyProducerImpl;
 import com.lelib.ycyocp.producer.YcyProducer;
 import com.lelib.ycyocp.model.ConsumeResult;
+import org.springframework.beans.factory.annotation.Value;
 
 /**
  * The default ycy manager, which will take advantage of:
@@ -17,9 +18,12 @@ import com.lelib.ycyocp.model.ConsumeResult;
  * 2) and consume the product by {@link ConsoleOutputYcyConsumerImpl}
  */
 public class DefaultYcyManager implements YcyManager<EmptyParam, StringProduct, ConsumeResult> {
+    @Value("${ycy.producer.string.hello:Hello OCP YCY}")
+    private String helloMessage;
+
     @Override
     public YcyProducer<EmptyParam, StringProduct> getProducer() {
-        return DefaultYcyProducerImpl.defaultStringInstance();
+        return DefaultYcyProducerImpl.stringInstance(helloMessage);
     }
 
     @Override

@@ -6,6 +6,7 @@ package com.lelib.ycyocp.producer;
 import com.lelib.ycyocp.model.EmptyParam;
 import com.lelib.ycyocp.model.StringProduct;
 import com.lelib.ycyocp.model.Product;
+import org.springframework.beans.factory.annotation.Value;
 
 /**
  * The default producer, which will generate a consolid {@link Product}.
@@ -13,9 +14,6 @@ import com.lelib.ycyocp.model.Product;
  * @param <TProduct>
  */
 public class DefaultYcyProducerImpl<TProduct extends Product> implements YcyProducer<EmptyParam, TProduct> {
-
-    public static final String HELLO_OCP_YCY = "Hello OCP YCY";
-
     private TProduct product;
 
     private DefaultYcyProducerImpl(TProduct product) {
@@ -31,7 +29,7 @@ public class DefaultYcyProducerImpl<TProduct extends Product> implements YcyProd
         return new DefaultYcyProducerImpl<>(product);
     }
 
-    public static DefaultYcyProducerImpl<StringProduct> defaultStringInstance() {
-        return of(StringProduct.of(HELLO_OCP_YCY));
+    public static DefaultYcyProducerImpl<StringProduct> stringInstance(String message) {
+        return of(StringProduct.of(message));
     }
 }
