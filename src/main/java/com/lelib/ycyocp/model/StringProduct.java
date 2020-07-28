@@ -1,9 +1,9 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.leliu.ycyocp.model;
+package com.lelib.ycyocp.model;
 
-import com.leliu.ycyocp.runner.YcyRunner;
+import com.lelib.ycyocp.runner.YcyRunner;
 
 /**
  * The product whose data is a string.

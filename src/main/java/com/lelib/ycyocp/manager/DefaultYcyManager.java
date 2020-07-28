@@ -1,15 +1,15 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.leliu.ycyocp.manager;
+package com.lelib.ycyocp.manager;
 
-import com.leliu.ycyocp.consumer.ConsoleOutputYcyConsumerImpl;
-import com.leliu.ycyocp.consumer.YcyConsumer;
-import com.leliu.ycyocp.model.ConsumeResult;
-import com.leliu.ycyocp.model.EmptyParam;
-import com.leliu.ycyocp.model.StringProduct;
-import com.leliu.ycyocp.producer.DefaultYcyProducerImpl;
-import com.leliu.ycyocp.producer.YcyProducer;
+import com.lelib.ycyocp.consumer.ConsoleOutputYcyConsumerImpl;
+import com.lelib.ycyocp.consumer.YcyConsumer;
+import com.lelib.ycyocp.model.EmptyParam;
+import com.lelib.ycyocp.model.StringProduct;
+import com.lelib.ycyocp.producer.DefaultYcyProducerImpl;
+import com.lelib.ycyocp.producer.YcyProducer;
+import com.lelib.ycyocp.model.ConsumeResult;
 
 /**
  * The default ycy manager, which will take advantage of:

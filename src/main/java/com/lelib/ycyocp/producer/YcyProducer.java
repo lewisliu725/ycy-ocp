@@ -1,10 +1,10 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.leliu.ycyocp.producer;
+package com.lelib.ycyocp.producer;
 
-import com.leliu.ycyocp.model.ProduceParam;
-import com.leliu.ycyocp.model.Product;
+import com.lelib.ycyocp.model.ProduceParam;
+import com.lelib.ycyocp.model.Product;
 
 /**
  * The interface to generate {@link Product}.

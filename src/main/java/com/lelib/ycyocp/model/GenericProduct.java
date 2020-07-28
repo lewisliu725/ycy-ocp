@@ -1,7 +1,7 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.leliu.ycyocp.model;
+package com.lelib.ycyocp.model;
 
 /**
  * The generic product.

@@ -1,26 +1,24 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.leliu.ycyocp.autoconfigure;
+package com.lelib.ycyocp.autoconfigure;
 
-import com.leliu.ycyocp.manager.DefaultYcyManager;
-import com.leliu.ycyocp.manager.YcyManager;
-import com.leliu.ycyocp.model.ConsumeResult;
-import com.leliu.ycyocp.model.EmptyParam;
-import com.leliu.ycyocp.model.StringProduct;
-import com.leliu.ycyocp.runner.AbstractYcyRunnerImpl;
-import com.leliu.ycyocp.runner.EmptyParamYcyRunnerImpl;
-import com.leliu.ycyocp.runner.YcyRunner;
+import com.lelib.ycyocp.manager.DefaultYcyManager;
+import com.lelib.ycyocp.manager.YcyManager;
+import com.lelib.ycyocp.model.ConsumeResult;
+import com.lelib.ycyocp.model.EmptyParam;
+import com.lelib.ycyocp.model.StringProduct;
+import com.lelib.ycyocp.runner.EmptyParamYcyRunnerImpl;
+import com.lelib.ycyocp.runner.YcyRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * The Springboot autoconfiguration class.
+ * The Springboot auto configuration class.
  */
 @Configuration
-@ComponentScan("com.leliu")
 public class YcyOcpConfiguration {
     @Bean("DefaultYcyRunner")
     @ConditionalOnMissingBean(YcyRunner.class)

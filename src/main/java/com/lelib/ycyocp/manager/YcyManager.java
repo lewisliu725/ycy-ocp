@@ -1,13 +1,13 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.leliu.ycyocp.manager;
+package com.lelib.ycyocp.manager;
 
-import com.leliu.ycyocp.consumer.YcyConsumer;
-import com.leliu.ycyocp.model.ConsumeResult;
-import com.leliu.ycyocp.model.ProduceParam;
-import com.leliu.ycyocp.model.Product;
-import com.leliu.ycyocp.producer.YcyProducer;
+import com.lelib.ycyocp.consumer.YcyConsumer;
+import com.lelib.ycyocp.producer.YcyProducer;
+import com.lelib.ycyocp.model.ConsumeResult;
+import com.lelib.ycyocp.model.ProduceParam;
+import com.lelib.ycyocp.model.Product;
 
 /**
  * The interface which is used to composite the {@link YcyProducer} and {@link YcyConsumer},

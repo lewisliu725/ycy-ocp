@@ -1,10 +1,10 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.leliu.ycyocp.consumer;
+package com.lelib.ycyocp.consumer;
 
-import com.leliu.ycyocp.model.ConsumeResult;
-import com.leliu.ycyocp.model.Product;
+import com.lelib.ycyocp.model.ConsumeResult;
+import com.lelib.ycyocp.model.Product;
 
 /**
  * The consume who will output the result of {@link Product#stringify()} to the console.

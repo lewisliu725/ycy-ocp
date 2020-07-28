@@ -1,9 +1,9 @@
-package com.leliu.ycyocp.runner;
+package com.lelib.ycyocp.runner;
 
-import com.leliu.ycyocp.manager.YcyManager;
-import com.leliu.ycyocp.model.ConsumeResult;
-import com.leliu.ycyocp.model.EmptyParam;
-import com.leliu.ycyocp.model.Product;
+import com.lelib.ycyocp.manager.YcyManager;
+import com.lelib.ycyocp.model.EmptyParam;
+import com.lelib.ycyocp.model.ConsumeResult;
+import com.lelib.ycyocp.model.Product;
 
 /**
  * The default runner, which take advantage of {@link EmptyParam} to generate the product, then consume it.

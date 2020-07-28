@@ -1,9 +1,9 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.leliu.ycyocp.model;
+package com.lelib.ycyocp.model;
 
-import com.leliu.ycyocp.consumer.YcyConsumer;
+import com.lelib.ycyocp.consumer.YcyConsumer;
 
 /**
  * The default consumer result which is used by {@link YcyConsumer#consume(Product)}

@@ -1,11 +1,11 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.leliu.ycyocp.producer;
+package com.lelib.ycyocp.producer;
 
-import com.leliu.ycyocp.model.EmptyParam;
-import com.leliu.ycyocp.model.Product;
-import com.leliu.ycyocp.model.StringProduct;
+import com.lelib.ycyocp.model.EmptyParam;
+import com.lelib.ycyocp.model.StringProduct;
+import com.lelib.ycyocp.model.Product;
 
 /**
  * The default producer, which will generate a consolid {@link Product}.
