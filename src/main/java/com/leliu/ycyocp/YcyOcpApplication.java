@@ -1,3 +1,6 @@
+/*
+ * Copyright 2020 Lewis Liu. All Rights Reserved.
+ */
 package com.leliu.ycyocp;
 
 import com.leliu.ycyocp.model.EmptyParam;
@@ -19,7 +22,7 @@ public class YcyOcpApplication {
     @Bean
     public CommandLineRunner executeYcyRunner(ConfigurableApplicationContext ctx, YcyRunner runner) {
         return (args) -> {
-            runner.run(EmptyParam.getInstance());
+            runner.run();
         };
     }
 }
