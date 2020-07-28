@@ -18,7 +18,7 @@ import org.springframework.beans.factory.annotation.Value;
  * 2) and consume the product by {@link ConsoleOutputYcyConsumerImpl}
  */
 public class DefaultYcyManager implements YcyManager<EmptyParam, StringProduct, ConsumeResult> {
-    @Value("${ycy.producer.string.hello:Hello OCP YCY}")
+    @Value("${ycy.product.string.hello:Hello OCP YCY}")
     private String helloMessage;
 
     @Override
