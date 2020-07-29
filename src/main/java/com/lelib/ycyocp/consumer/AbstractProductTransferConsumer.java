@@ -7,6 +7,8 @@ import com.lelib.ycyocp.producer.YcyProducer;
 import com.lelib.ycyocp.model.ConsumeResult;
 import com.lelib.ycyocp.model.Product;
 
+import java.util.Objects;
+
 /**
  * The abstract decorator which can be used to adapter the target consumer.
  * <p>
@@ -24,7 +26,7 @@ public abstract class AbstractProductTransferConsumer<
     private YcyConsumer<TTargetProduct, TConsumeResult> targetConsumer;
 
     protected AbstractProductTransferConsumer(YcyConsumer<TTargetProduct, TConsumeResult> targetConsumer) {
-        this.targetConsumer = targetConsumer;
+        this.targetConsumer = Objects.requireNonNull(targetConsumer, "targetConsumer");
     }
 
     @Override

@@ -6,6 +6,7 @@ package com.lelib.ycyocp.runner;
 import com.lelib.ycyocp.consumer.YcyConsumer;
 import com.lelib.ycyocp.manager.YcyManager;
 import com.lelib.ycyocp.model.ConsumeResult;
+import com.lelib.ycyocp.model.EmptyParam;
 import com.lelib.ycyocp.model.ProduceParam;
 import com.lelib.ycyocp.model.Product;
 import com.lelib.ycyocp.producer.YcyProducer;
@@ -23,7 +24,17 @@ public interface YcyRunner<
         TParam extends ProduceParam,
         TProduct extends Product,
         TResult extends ConsumeResult> {
-    YcyManager<TParam, TProduct, TResult> getYcyManager();
+    /**
+     * Run with null parameter.
+     */
+    default void run() {
+        this.run(null);
+    }
 
-    void run();
+    /**
+     * The run method
+     *
+     * @param produceParam
+     */
+    void run(TParam produceParam);
 }
