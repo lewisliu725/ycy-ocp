@@ -22,7 +22,9 @@ public class YcyOcpApplication {
     }
 
     @Bean
-    public CommandLineRunner executeDefaultYcyRunner(ConfigurableApplicationContext ctx, @Nullable @Qualifier("DefaultYcyRunner") YcyRunner runner) {
+    public CommandLineRunner executeDefaultYcyRunner(
+            ConfigurableApplicationContext ctx,
+            @Nullable @Qualifier("DefaultYcyRunner") YcyRunner runner) {
         return (args) -> {
             if (runner == null) {
                 // TODO Use log instead
