@@ -23,4 +23,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run Xad Application
-      run: java -jar target/ycy-ocp-0.0.0-SNAPSHOT.jar
+      run: java -jar target/ocp-xad-0.0.1.jar

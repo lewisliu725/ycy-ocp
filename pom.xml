@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.leliu</groupId>
-    <artifactId>ycy-ocp</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>ycy-ocp</name>
-    <description>YCY OCP</description>
+    <artifactId>ocp-xad</artifactId>
+    <version>0.0.1</version>
+    <name>ocp-xad</name>
+    <description>OCP XAD</description>
 
     <properties>
         <java.version>1.8</java.version>
