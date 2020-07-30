@@ -1,14 +1,14 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.lelib.ycyocp.model;
+package com.lelib.ocp.xad.model;
 
-import com.lelib.ycyocp.producer.YcyProducer;
+import com.lelib.ocp.xad.producer.XadProducer;
 
 /**
  * The empty produce parameter.
  * <p>
- * It's often used when the {@link YcyProducer} doesn't care about the parameter while producing {@link Product}.
+ * It's often used when the {@link XadProducer} doesn't care about the parameter while producing {@link Product}.
  */
 public class EmptyParam implements ProduceParam {
     private static EmptyParam instance;

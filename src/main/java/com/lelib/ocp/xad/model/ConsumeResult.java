@@ -1,12 +1,12 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.lelib.ycyocp.model;
+package com.lelib.ocp.xad.model;
 
-import com.lelib.ycyocp.consumer.YcyConsumer;
+import com.lelib.ocp.xad.consumer.XadConsumer;
 
 /**
- * The default consumer result which is used by {@link YcyConsumer#consume(Product)}
+ * The default consumer result which is used by {@link XadConsumer#consume(Product)}
  * You can also create your own result model by extend this model.
  */
 public class ConsumeResult {

@@ -1,26 +1,25 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.lelib.ycyocp.runner;
+package com.lelib.ocp.xad.runner;
 
-import com.lelib.ycyocp.consumer.YcyConsumer;
-import com.lelib.ycyocp.manager.YcyManager;
-import com.lelib.ycyocp.model.ConsumeResult;
-import com.lelib.ycyocp.model.EmptyParam;
-import com.lelib.ycyocp.model.ProduceParam;
-import com.lelib.ycyocp.model.Product;
-import com.lelib.ycyocp.producer.YcyProducer;
+import com.lelib.ocp.xad.consumer.XadConsumer;
+import com.lelib.ocp.xad.manager.XadManager;
+import com.lelib.ocp.xad.model.ConsumeResult;
+import com.lelib.ocp.xad.model.ProduceParam;
+import com.lelib.ocp.xad.model.Product;
+import com.lelib.ocp.xad.producer.XadProducer;
 
 /**
- * The interface which will take take advantage of {@link YcyManager} to
- * get the instance of {@link YcyProducer} and {@link YcyConsumer},
+ * The interface which will take take advantage of {@link XadManager} to
+ * get the instance of {@link XadProducer} and {@link XadConsumer},
  * and take advantage of the producer to produce product, then consume the product the by consumer.
  *
  * @param <TParam>
  * @param <TProduct>
  * @param <TResult>
  */
-public interface YcyRunner<
+public interface XadRunner<
         TParam extends ProduceParam,
         TProduct extends Product,
         TResult extends ConsumeResult> {

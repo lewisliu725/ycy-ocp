@@ -1,10 +1,10 @@
-package com.lelib.ycyocp;
+package com.lelib.ocp.xad;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class YcyOcpApplicationTests {
+class XadApplicationTests {
 
     @Test
     void contextLoads() {

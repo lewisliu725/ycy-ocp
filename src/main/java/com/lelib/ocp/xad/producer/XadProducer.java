@@ -1,10 +1,10 @@
 /*
  * Copyright 2020 Lewis Liu. All Rights Reserved.
  */
-package com.lelib.ycyocp.producer;
+package com.lelib.ocp.xad.producer;
 
-import com.lelib.ycyocp.model.ProduceParam;
-import com.lelib.ycyocp.model.Product;
+import com.lelib.ocp.xad.model.ProduceParam;
+import com.lelib.ocp.xad.model.Product;
 
 /**
  * The interface to generate {@link Product}.
@@ -12,7 +12,7 @@ import com.lelib.ycyocp.model.Product;
  * @param <TParam>
  * @param <TProduct>
  */
-public interface YcyProducer<TParam extends ProduceParam, TProduct extends Product> {
+public interface XadProducer<TParam extends ProduceParam, TProduct extends Product> {
     /**
      * Generate a product based on the provided parameter.
      *
