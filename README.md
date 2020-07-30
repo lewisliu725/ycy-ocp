@@ -6,4 +6,4 @@
 
 ### UML
 
-![UML](/assets/ycy2.jpg)
+![UML](/assets/uml.png)
